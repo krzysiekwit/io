@@ -1,10 +1,6 @@
 Definicje:
-kandydaci dla użytkownika X - użytkownicy, którzy polubili co najmniej jedną spośród ofert, którymi użytkownik X wyraził zainteresowanie
+kandydaci dla użytkownika X - użytkownicy, którzy polubili co najmniej jedną spośród ofert, które użytkownik X polubił
 połączeni użytkownicy - użytkownicy, którzy nawzajem polubili swoje profile
-
-
-
-
 
 Wymagania niefunkcjonalne:
 język – polski
@@ -47,12 +43,66 @@ Powiadomienia
 PO1. użytkownik jest powiadamiamy po edycji lub usunięciu oferty, którą polubił.
 PO2. użytkownik jest powiadamiany, kiedy łączy się z innym użytkownikiem.
 
+Przypadki użycia:
+1. Założenie konta
+2. Logowanie się
+3. Wyszukanie oferty
+4. Polubienie oferty
+5. Polubienie profilu użytkownika
+6. Utworzenie nowej oferty
+7. Utworzenie nowego pokoju czatowego
 
+Opisy przypadków użycia:
+Wyszukanie oferty
+Aktor: użytkownik zainteresowany wyszukaniem oferty
+Warunki początkowe: // brak?
+Główny scenariusz:
+1. System wyświetla formularz wyszukiwania ofert, zawierający następujące pola:
+- słowa kluczowe
+- lokalizacja
+- minimalny koszt wynajmu
+- maksymalny koszt wynajmu
+- minimalna liczba pokojów
+- maksymalna liczba pokojów
+- minimalna powierzchnia mieszkania
+- maksymalna powierzchnia mieszkania
+Wszystkie pola są opcjonalne.
+2. Użytkownik wypełnia formularz i zatwierdza.
+3. System wyświetla oferty spełniające warunki wprowadzone przez użytkownika w formularzu oraz pola umożliwiające zmianę strony lub maksymalnej liczby ofert wyświetlanych na stronie.
+4. Użytkownik przegląda wyświetlone oferty.
+5. Użytkownik wybiera ofertę.
+Scenariusze alternatywne:
+3a. W systemie nie ma ofert spełniających warunki wprowadzone przez użytkownika w formularzu.
+a. System wyświetla komunikat ze stosownym komunikatem - niepowodzenie.
+4a. Użytkownik wybiera opcję zmiany strony i wybiera żądaną stronę.
+a. System wyświetla wybraną przez użytkownika stronę z ofertami.
+b. Powrót do punktu 4.
+4b. Użytkownik wybiera opcję zmiany maksymalnej liczby ofert wyświetlanych na stronie.
+a. System wyświetla ponownie stronę z ofertami, potencjalnie zmieniając ich liczbę.
+b. Powrót do punktu 4.
+Warunki końcowe:
+System wyświetla szczegóły oferty wybranej przez użytkownika.
 
+Utworzenie nowej oferty
+Aktor: użytkownik zainteresowany wynajęciem swojego mieszkania
+Warunki początkowe: użytkownik posiada w systemie konto i jest zalogowany.
+Scenariusz główny:
+1. Użytkownik wybiera opcję utworzenia nowej oferty.
+2. System wyświetla formularz tworzenia oferty, zawierający następujące pola:
+- nazwa oferty
+- lokalizacja
+- koszt wynajmu
+- liczba pokojów
+- powierzchnia mieszkania
+- numer telefonu do kontaktu
+- opis oferty
+- zdjęcia mieszkania
+3. Użytkownik wypełnia formularz i zatwierdza.
+Scenariusze alternatywne:
+// Nie widzę żadnych przy założeniu, że nie można wysłać niewalidujących się danych.
+Warunki końcowe:
+Do systemu zostaje dodana oferta stworzona przez użytkownika. System wyświetla stosowny komunikat oraz nowo utworzoną ofertę.
 
 # TODO
 # opisać ładnie niefunkcjonalne
-# wypisać wszystkie funkcyjne
-# wypisać usecase'y
-# opisać dokładnie dwa usecase'y (1: wyszukanie oferty, polubienie oferty, polubienie kandydata; 2: utworzenie oferty)
 # zrobić w html+css główny widok ofert

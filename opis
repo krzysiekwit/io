@@ -15,21 +15,38 @@ serwer dostępny 24/7 z zapowiedzianymi przerwami technicznymi
 
 Wymagania funkcjonalne:
 Uwierzytelnianie
-1. U1 – użytkownik zakłada konto. Podaje adres email i hasło. Konto jest nieaktywne.
-2. U2 – użytkownik aktywuje konto przy pomocy linku wysłanego na adres email podany przy zakładaniu konta.
-3. U3 – użytkownik loguje się do systemu przy pomocy adresu email i hasła.
-4. U4 – użytkownik wylogowuje się z systemu.
-5. U5 – użytkownik usuwa konto.
-6. U6 – użytkownik odzyskuje hasło przy pomocy linku wysłanego na swój adres email.
-Autoryzacja
-A1 – przeglądanie ofert nie wymaga zalogowania.
-A2 – zalogowany użytkownik może edytować swój profil.
-A3 – zalogowany użytkownik może dodać ofertę.
-A4 – zalogowany użytkownik może edytować i usuwać oferty dodane przez siebie.
-A5 – zalogowany użytkownik może polubić wybraną ofertę.
-A6 – zalogowany użytkownik może przeglądać profile użytkowników ze swojego zbioru kandydatów.
-A7 – zalogowany użytkownik może polubić profil dowolnego użytkownika ze swojego zbioru kandydatów.
-A8 – zalogowany użytkownik 
+U1. użytkownik zakłada konto przy pomocy adresu email i hasła. Konto jest nieaktywne.
+U2. użytkownik aktywuje konto przy pomocy linku wysłanego na adres email podany przy zakładaniu konta.
+U3. użytkownik loguje się do systemu przy pomocy adresu email i hasła.
+U4. użytkownik wylogowuje się z systemu.
+U5. użytkownik usuwa konto.
+U6. użytkownik odzyskuje hasło przy pomocy linku wysłanego na swój adres email.
+Profile
+PR1. użytkownik uzupełnia profil swoimi danymi osobistymi. Profil może zawierać imię, płeć, wiek, pracę, studia, zainteresowania, stosunek do zwierząt, autoprezentację.
+PR2. użytkownik edytuje profil.
+PR3. użytkownik przegląda profile swoich kandydatów.
+PR4. użytkownik daje polubienie wybranym profilom swoich kandydatów.
+PR5. użytkownik przegląda profile autorów ofert.
+Oferty
+O1. użytkownik tworzy oferty. Oferta zawiera zdjęcia, adres, metraż, liczbę pokojów, maksymalną liczbę osób, cenę wynajmu, prezentację, dane kontaktowe twórcy.
+O2. użytkownik przegląda oferty.
+O3. użytkownik usuwa utworzone przez siebie oferty.
+O4. użytkownik edytuje utworzone przez siebie oferty.
+O5. użytkownik daje polubienie wybranym ofertom.
+O6. użytkownik przegląda w osobnym widoku oferty, które polubił.
+O7. użytkownik cofa polubienie oferty.
+Czaty
+C1. użytkownik tworzy pokoje czatowe, ma w nich status administratora.
+C2. użytkownik dodaje połączonych ze sobą użytkowników do pokojów czatowych, w których ma status administratora.
+C3. użytkownik usuwa użytkowników z pokojów czatowych, w których ma status administratora.
+C4. użytkownik nadaje status administratora innym użytkownikom w pokojach czatowych, w których ma status administratora.
+C5. użytkownik odbiera status administratora innym użytkownikom w pokojach czatowych, w których ma status administratora.
+C6. użytkownik wysyła wiadomości tekstowe do pokojów czatowych, których jest członkiem.
+C7. użytkownik czyta wiadomości tekstowe wysłane do pokojów czatowych, których jest członkiem.
+Powiadomienia
+PO1. użytkownik jest powiadamiamy po edycji lub usunięciu oferty, którą polubił.
+PO2. użytkownik jest powiadamiany, kiedy łączy się z innym użytkownikiem.
+
 
 
 

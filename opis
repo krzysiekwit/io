@@ -6,9 +6,9 @@ Wymagania niefunkcjonalne:
 Dostępność
 - Zawartość strony w języku polskim.
 - Portal działa poprawnie na przeglądarce Firefox 65.
-- Aplikacja jest dostępna 24 godziny na dobę poza zapowiedzianymi przerwami technicznymi. Przerwy techniczne są zapowiadane z conajmniej tygodniowym wyprzedzeniem.
+- Aplikacja jest dostępna 24 godziny na dobę poza zapowiedzianymi przerwami technicznymi. Przerwy techniczne są zapowiadane z co najmniej tygodniowym wyprzedzeniem.
 Wydajność
-- Maksymalny czas oczekiwania na odpowiedź serwera poniżej 2 sekund
+- Maksymalny czas oczekiwania na odpowiedź serwera poniżej 5 sekund
 - Serwer obsługuje do 40 zapytań na sekundę.
 Bezpieczeństwo
 - Autoryzacja użytkowników przez login i hasło. Hasła nie są przechowywane w bazie danych. Hasła są haszowane i przechowywany jest tylko hasz.

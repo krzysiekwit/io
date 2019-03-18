@@ -3,11 +3,17 @@ kandydaci dla użytkownika X - użytkownicy, którzy polubili co najmniej jedną
 połączeni użytkownicy - użytkownicy, którzy nawzajem polubili swoje profile
 
 Wymagania niefunkcjonalne:
-język – polski
-przeglądarka – Firefox 65
-czas reakcji
-ile użytkowników naraz
-serwer dostępny 24/7 z zapowiedzianymi przerwami technicznymi
+Dostępność
+- Zawartość strony w języku polskim.
+- Portal działa poprawnie na przeglądarce Firefox 65.
+- Aplikacja jest dostępna 24 godziny na dobę poza zapowiedzianymi przerwami technicznymi. Przerwy techniczne są zapowiadane z conajmniej tygodniowym wyprzedzeniem.
+Wydajność
+- Maksymalny czas oczekiwania na odpowiedź serwera poniżej 2 sekund
+- Serwer obsługuje do 40 zapytań na sekundę.
+Bezpieczeństwo
+- Autoryzacja użytkowników przez login i hasło. Hasła nie są przechowywane w bazie danych. Hasła są haszowane i przechowywany jest tylko hasz.
+- Kopia zapasowa danych jest tworzona raz w tygodniu.
+
 
 Wymagania funkcjonalne:
 Uwierzytelnianie
@@ -40,7 +46,7 @@ C5. użytkownik odbiera status administratora innym użytkownikom w pokojach cza
 C6. użytkownik wysyła wiadomości tekstowe do pokojów czatowych, których jest członkiem.
 C7. użytkownik czyta wiadomości tekstowe wysłane do pokojów czatowych, których jest członkiem.
 Powiadomienia
-PO1. użytkownik jest powiadamiamy po edycji lub usunięciu oferty, którą polubił.
+PO1. użytkownik jest powiadamiany po edycji lub usunięciu oferty, którą polubił.
 PO2. użytkownik jest powiadamiany, kiedy łączy się z innym użytkownikiem.
 
 Przypadki użycia:
@@ -104,5 +110,4 @@ Warunki końcowe:
 Do systemu zostaje dodana oferta stworzona przez użytkownika. System wyświetla stosowny komunikat oraz nowo utworzoną ofertę.
 
 # TODO
-# opisać ładnie niefunkcjonalne
 # zrobić w html+css główny widok ofert
